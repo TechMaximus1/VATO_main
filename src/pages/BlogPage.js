@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../component/Footer/Footer'
 import Navbar from '../component/Navbar/Nav'
-import { fintech, shareholder, track1 } from '../Assets';
+import { arrowup, people03, shield } from '../Assets';
 import './styles.css'
 const BlogPage = () => {
   return (
@@ -18,7 +18,7 @@ const BlogPage = () => {
           <div className="flex space-x-4">
             <div className="w-1/3 bg-gray-200 h-48 rounded-lg">
               <img 
-                src= {fintech}
+                src= {arrowup}
                 alt="Blog Post 1"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -38,7 +38,7 @@ const BlogPage = () => {
           <div className="flex space-x-4">
             <div className="w-1/3 bg-gray-200 h-48 rounded-lg">
               <img 
-                src= {shareholder}
+                src= {shield}
                 alt="Blog Post 2"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -58,7 +58,7 @@ const BlogPage = () => {
           <div className="flex space-x-4">
             <div className="w-1/3 bg-gray-200 h-48 rounded-lg">
               <img 
-                src={track1}
+                src={people03}
                 alt="Blog Post 3"
                 className="w-full h-full object-cover rounded-lg"
               />
