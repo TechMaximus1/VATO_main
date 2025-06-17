@@ -14,8 +14,8 @@ const CardDeal = () => (
         steps.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      Compare credit and debit card options based on your needs, get personalized recommendations, 
+      and apply online in minutes — no hassle, just smarter choices.
       </p>
       <Link to="/register">
       <Button styles={`mt-10`} />

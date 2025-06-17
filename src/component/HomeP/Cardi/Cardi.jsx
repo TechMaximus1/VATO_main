@@ -15,13 +15,13 @@ const Cardi = () => {
       <div className={cari.container}>
         <div className={cari.head}>
           <h3><strong>Our clients</strong></h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, obcaecati corporis. 
-            Laborum qui nemo veniam iusto modi.</p>
+          <p>What people are saying about us</p>
         </div>
         <div className={cari.content}>
           <div className={cari.card}>
             <h4> <sub>,,</sub> </h4>
-            <p>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+            <p>Money is only a tool. It will take you wherever you wish, but it will not replace 
+              you as the driver.</p>
             <div className={cari.sec}>
               <img src={imgI} alt="" />
               <div className={cari.seci}>
@@ -32,22 +32,22 @@ const Cardi = () => {
           </div>
           <div className={cari.card}>
           <h4> <sub>,,</sub> </h4>
-            <p>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+            <p>Money makes your life easier. If you're lucky to have it, you're lucky</p>
             <div className={cari.sec}>
               <img src={imgIi} alt="" />
               <div className={cari.seci}>
-                <h3>Herman Jensen</h3>
+                <h3>Steve Mark</h3>
                 <h5>Founder & Leader</h5>
               </div>
             </div>
           </div>
           <div className={cari.card}>
           <h4> <sub>,,</sub> </h4>
-            <p>Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+            <p>It is usually people in the money business, and international trade that are really rich</p>
             <div className={cari.sec}>
               <img src={imgIii} alt="" />
               <div className={cari.seci}>
-                <h3>Herman Jensen</h3>
+                <h3>Kenn Gallagher</h3>
                 <h5>Founder & Leader</h5>
               </div>
             </div>

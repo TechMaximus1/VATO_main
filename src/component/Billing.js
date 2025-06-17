@@ -21,9 +21,8 @@ const Billing = () => (
         invoicing
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+        Stay on top of your finances with tools to create, send, and manage invoices, monitor payments, 
+        and streamline your billing process — all in one secure and convenient place
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
