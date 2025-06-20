@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Footer from '../component/Footer/Footer'
 import Navbar from '../component/Navbar/Nav'
-import { arrowup, people03, shield } from '../Assets';
+import track1 from '../Assets/track1.jpg'
+import shareholder from '../Assets/shareholder.png'
+import fintech  from '../Assets/fintech.jpg'
+// import { arrowup, people03, shield } from '../Assets';
 import './styles.css'
 const BlogPage = () => {
+    const contactRef = useRef(null);
+  
+    const scrollToSection = (ref) => {
+        if (ref.current) {
+            window.scrollTo({
+                top: ref.current.offsetTop - 100, 
+                behavior: 'smooth'
+            });
+        }
+    };
   return (
     <section>
-    < Navbar />
+    < Navbar  scrollToSection={scrollToSection} refs={{ contactRef }} />
     <div className='styles'>
           <div className='container'>
           <div className="max-w-screen-lg mx-auto p-4 mb-24">
@@ -18,7 +31,7 @@ const BlogPage = () => {
           <div className="flex space-x-4">
             <div className="w-1/3 bg-gray-200 h-48 rounded-lg">
               <img 
-                src= {arrowup}
+                src= {fintech }
                 alt="Blog Post 1"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -38,7 +51,7 @@ const BlogPage = () => {
           <div className="flex space-x-4">
             <div className="w-1/3 bg-gray-200 h-48 rounded-lg">
               <img 
-                src= {shield}
+                src= {shareholder}
                 alt="Blog Post 2"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -58,7 +71,7 @@ const BlogPage = () => {
           <div className="flex space-x-4">
             <div className="w-1/3 bg-gray-200 h-48 rounded-lg">
               <img 
-                src={people03}
+                src={ track1}
                 alt="Blog Post 3"
                 className="w-full h-full object-cover rounded-lg"
               />

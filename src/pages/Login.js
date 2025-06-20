@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { FaChevronRight, FaPiggyBank } from 'react-icons/fa';
+import React, { useEffect, useRef, useState } from 'react';
+import { FaChevronRight} from 'react-icons/fa';
 import InputComponent from '../component/InputComponent';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -46,9 +46,20 @@ const Login = () => {
          }, 3000)   
        }
      }, [dispatch, navigate, status])
+     const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+      if (ref.current) {
+          window.scrollTo({
+              top: ref.current.offsetTop - 100, 
+              behavior: 'smooth'
+          });
+      }
+  };
   return (
+
     <div>
-      <Navbar />
+      <Navbar scrollToSection={scrollToSection} refs={{ contactRef }} />
     <main className='font-poppins font-roboto flex flex-col w-screen sm:w-full lg:w-screen md:w-screen h-screen justify-center items-center bg-gradient-to-r from-gray-300 to-white-500 relative'>
         {enableSpinner && <Spinner />}
         <section className='flex flex-col justify-center p-2 w-full w-3/5 gap-8 items-center sm:w-3/5 xl:w-2/5 sm:p-6'>

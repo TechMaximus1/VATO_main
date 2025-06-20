@@ -6,7 +6,7 @@ import Cardi from '../component/HomeP/Cardi/Cardi'
 import Card from '../component/HomeP/Card/Card'
 // import Billi from '../component/HomeP/Bill/Bill'
 import Cardii from '../component/HomeP/Cardii/Cardii'
-import { Billing, Business, CardDeal} from "../component";
+import { Billing, CardDeal} from "../component";
 import { useRef } from 'react'
 import Bill from '../component/HomeP/Bill/Bill'
 

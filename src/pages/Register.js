@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import InputComponent from '../component/InputComponent';
 import avatar from "../Assets/humanicon.jpg";
 import { useDispatch, useSelector } from 'react-redux';
@@ -164,10 +164,19 @@ const Register = () => {
       }, 3000);
     }
   }, [dispatch, navigate, status]);
-
+    const contactRef = useRef(null);
+  
+    const scrollToSection = (ref) => {
+        if (ref.current) {
+            window.scrollTo({
+                top: ref.current.offsetTop - 100, 
+                behavior: 'smooth'
+            });
+        }
+    };
   return (
     <div>
-      <Navbar/>
+      <Navbar scrollToSection={scrollToSection} refs={{ contactRef }}/>
       <div className='styles'>
           <div className='container'>
           <main className='font-roboto flex flex-col w-full min-h-screen justify-center items-center shadow-lg pb-4 '>

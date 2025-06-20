@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Footer from '../component/Footer/Footer'
 import Navbar from '../component/Navbar/Nav'
 import './styles.css'
@@ -36,9 +36,19 @@ const services = [
 ];
 
 const ServicesPage = () => {
+    const contactRef = useRef(null);
+  
+    const scrollToSection = (ref) => {
+        if (ref.current) {
+            window.scrollTo({
+                top: ref.current.offsetTop - 100, 
+                behavior: 'smooth'
+            });
+        }
+    };
   return (
     <>
-    <Navbar />
+    <Navbar  scrollToSection={scrollToSection} refs={{ contactRef }}/>
     <div className='styles'>
           <div className='container'>
           <div >

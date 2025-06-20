@@ -54,10 +54,21 @@ const Footer = () => {
                         <h3>Copyright Ⓒ 2025 VatoBank. All Rights Reserved.</h3>
                     </div>
                     <div className={footer.icons}>
+                        <a href="https://facebook.com" target='_blank'>
                         <AiFillFacebook className={footer.iconb}/>
+                        </a>
+
+                        <a href="https://linkedin.com" target='_blank'>
                         <AiFillLinkedin className={footer.iconb}/>
+                        </a>
+
+                        <a href="https://instagram.com" target='_blank'>
                         <AiFillInstagram className={footer.iconb}/>
+                        </a>
+
+                        <a href="https://twitter.com" target='_blank'>
                         <AiFillTwitterCircle className={footer.iconb}/>
+                        </a>
                     </div>
                 </div>
             </div>
