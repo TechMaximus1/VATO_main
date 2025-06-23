@@ -3,7 +3,7 @@ import api from '../../api/api'; // API handler
 import Spinner from '../../component/Spinner'; // Spinner component
 import EditProfile from '../../component/profile/EditProfile';
 import PinSetup from '../../component/profile/PinSetup';
-import avatar from "../../Assets/avatar.jpg";
+import avatar from "../../Assets/humanicon.jpg";
 // import SectionContainer from '../../component/SectionContainer'
 
 

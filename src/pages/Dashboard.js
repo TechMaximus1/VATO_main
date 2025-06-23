@@ -7,7 +7,7 @@ import Account from './dashboard/Account'
 import Payment from './dashboard/Payment'
 import Transaction from './dashboard/Transaction'
 import Card from './dashboard/Card'
-// import Settings from './dashboard/AccNo'
+import Settings from './dashboard/Settings'
 import Profile from './dashboard/Profile'
 import Convert from './dashboard/Convert'
 // import PinPage from './dashboard/PinPage'
@@ -28,7 +28,7 @@ const Dashboard = () => {
           <Route path="/payments" element={<Payment />} />
           <Route path="/transactions" element={<Transaction />} />
           <Route path="/cards" element={<Card />} />
-          {/* <Route path="/settings" element={<Settings />} /> */}
+          <Route path="/settings" element={<Settings />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/convert" element={<Convert />} />
           {/* <Route path="/pinpage" element={<PinPage />} /> */}
